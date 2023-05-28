@@ -15,17 +15,17 @@ class SecondPage extends ConsumerWidget {
           data: (data) {
             return Text(
               data,
-              style: TextStyle(color: Colors.blue, fontSize: 25),
+              style: const TextStyle(color: Colors.blue, fontSize: 25),
             );
           },
           error: (error, stackTrace) {
             return Text(
               error.toString(),
-              style: TextStyle(color: Colors.blue, fontSize: 25),
+              style: const TextStyle(color: Colors.blue, fontSize: 25),
             );
           },
           loading: () {
-            return CircularProgressIndicator();
+            return const CircularProgressIndicator();
           },
         )));
   }
